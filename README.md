@@ -1,4 +1,4 @@
-# Rest Countries API - Test Scenarios #
+# Rest Countries API #
 
 This is a collection of test scenarios for the Rest Countries API. The Rest Countries API provides information about countries, including their names, currencies, languages, and more.
 
@@ -35,7 +35,7 @@ pm.test("Status code is 200", function () {
 ```
 
 
-## Endpoint Test Scenarios ##
+## Test Scenarios ##
 
 ### NAME Endpoint ###
 
