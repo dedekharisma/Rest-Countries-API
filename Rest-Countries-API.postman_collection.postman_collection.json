@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "58824624-f5bd-448c-b167-5af4c2b8b424",
+		"name": "Rest-Countries-API.postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9654500"
+	},
+	"item": [
+		{
+			"name": "Name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test to ensure the response contains valid JSON",
+							"pm.test(\"Response is valid JSON\", function() {",
+							"    pm.response.to.have.jsonBody();",
+							"});",
+							"",
+							"// Test to ensure the response status code is 200 OK",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/v3.1/name/{{name}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"{{name}}"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Language",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test to ensure the response contains valid JSON",
+							"pm.test(\"Response is valid JSON\", function() {",
+							"    pm.response.to.have.jsonBody();",
+							"});",
+							"",
+							"// Test to ensure the response status code is 200 OK",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}lang/{{lang}}",
+					"host": [
+						"{{baseURL}}lang"
+					],
+					"path": [
+						"{{lang}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currency",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test to ensure the response contains valid JSON",
+							"pm.test(\"Response is valid JSON\", function() {",
+							"    pm.response.to.have.jsonBody();",
+							"});",
+							"",
+							"// Test to ensure the response status code is 200 OK",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}currency/{{currency}}",
+					"host": [
+						"{{baseURL}}currency"
+					],
+					"path": [
+						"{{currency}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
